@@ -2,10 +2,10 @@
 version: '3.8'
 services:
  pmtfrontend:
-  image: pmt_frontend1
+  image: pmt_frontendtest1
   ports:
    - 3030:3000
-  container_name: pmt_frontend
+  container_name: pmt_frontendtest
   deploy:
     replicas: 1
   restart: always
