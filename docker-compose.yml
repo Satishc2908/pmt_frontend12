@@ -1,11 +1,11 @@
 ---
 version: '3.8'
 services:
- auth:
-  image: pmt
+ pmtfrontend:
+  image: pmt_frontend1
   ports:
-   - 8080:8080
-  container_name: pmt_backend
+   - 3030:3000
+  container_name: pmt_frontend
   deploy:
     replicas: 1
   restart: always
